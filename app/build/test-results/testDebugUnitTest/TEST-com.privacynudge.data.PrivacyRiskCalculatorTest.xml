@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.privacynudge.data.PrivacyRiskCalculatorTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-03-31T07:17:36.360Z" hostname="LAPTOP-55TL8NMT" time="0.062">
+  <properties/>
+  <testcase name="calculateNB returns 0_7 with INTERNET and NETWORK_STATE" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.031"/>
+  <testcase name="calculateUI returns intermediate for mid-age update" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.001"/>
+  <testcase name="calculateSL returns 0 for empty permissions" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.005"/>
+  <testcase name="calculateUI returns 0_1 for very old update" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.001"/>
+  <testcase name="getRiskLevel returns HIGH for score at or above 0_70" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.002"/>
+  <testcase name="calculateSL returns positive for granted dangerous permissions" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.004"/>
+  <testcase name="getRiskLevel does not override for non-Gemini apps" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.002"/>
+  <testcase name="calculateUI returns 1_0 for recent update" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.002"/>
+  <testcase name="calculateSL returns 0 for non-granted permissions" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.001"/>
+  <testcase name="calculateNB returns 0 without INTERNET" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.0"/>
+  <testcase name="calculateSL increases with more sensitive permissions" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.0"/>
+  <testcase name="getRiskLevel overrides to LOW for Gemini app name" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.0"/>
+  <testcase name="calculateNB returns 0_5 with INTERNET only" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.001"/>
+  <testcase name="getRiskLevel overrides to LOW for Gemini package" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.0"/>
+  <testcase name="getRiskLevel returns LOW for score below 0_35" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.0"/>
+  <testcase name="getRiskLevel returns MEDIUM for score between 0_35 and 0_70" classname="com.privacynudge.data.PrivacyRiskCalculatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

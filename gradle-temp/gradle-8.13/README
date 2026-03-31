@@ -1,0 +1,91 @@
+# 🛡️ Privacy Nudge
+
+**Catch your data in motion.**
+
+Privacy Nudge is an Android application that helps users understand when their apps are communicating with privacy-sensitive domains. It uses a local VPN service to monitor DNS queries and provides real-time notifications when potentially concerning network activity is detected.
+
+--- 
+
+## 📖 Table of Contents
+
+- [Features](#-features)
+- [How It Works](#-how-it-works)
+- [Architecture](#-architecture)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Privacy & Security](#-privacy--security)
+
+---
+
+## ✨ Features
+
+### 🔍 App Monitoring
+- Select any installed app to monitor its network activity
+- View app permissions including location access status
+- Non-intrusive monitoring that runs in the background
+
+### 🌐 DNS Query Detection
+- Intercepts and analyzes DNS queries from monitored apps
+- Detects connections to sensitive domains including:
+  - **Location Services** - Google Maps, Mapbox, IP geolocation APIs
+  - **Analytics & Tracking** - Google Analytics, Firebase, Mixpanel, Amplitude
+  - **Advertising** - DoubleClick, AdMob, Facebook tracking
+  - **Authentication** - OAuth, social login services
+
+### 🔔 Real-time Privacy Nudges
+- Push notifications when sensitive domains are contacted
+- Contextual alerts showing which app accessed which service
+- Permission-aware nudges (e.g., alerts when location-enabled apps contact tracking services)
+
+### 📊 Event Logging
+- In-app event log showing all detected privacy-relevant activity
+- Timestamped records for review
+- Clear explanations of why each event is flagged
+
+---
+
+## 🔧 How It Works
+
+1. **VPN Tunnel Creation** - Creates a local VPN interface that routes traffic from the selected app
+2. **Packet Interception** - Reads IP packets and extracts DNS query payloads
+3. **Domain Analysis** - Parses DNS queries to extract requested domain names
+4. **Pattern Matching** - Compares domains against a database of sensitive services
+5. **Permission Check** - Verifies if the app has location permissions (heightened concern)
+6. **User Notification** - Sends push notification and logs the event in-app
+
+---
+
+## 🏗️ Architecture
+
+The app follows a clean architecture with separation of concerns:
+
+| Layer | Components |
+|-------|------------|
+| **Presentation** | MainActivity, HomeViewModel, Compose UI Components |
+| **Domain** | SensitiveDomains, PermissionInspector |
+| **Data** | InstalledAppsRepository, PreferencesRepository, NudgeEventRepository |
+| **Service** | PrivacyNudgeVpnService, DnsPacketParser, NotificationHelper |
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| **Language** | Kotlin 2.2.21 |
+| **UI Framework** | Jetpack Compose (Material 3) |
+| **Build System** | Gradle 8.13 with Kotlin DSL |
+| **Android Gradle Plugin** | 8.13.2 |
+| **Min SDK** | 26 (Android 8.0 Oreo) |
+| **Target SDK** | 36 (Android 16) |
+| **Architecture** | MVVM with StateFlow |
+| **Async** | Kotlin Coroutines |
+| **Preferences** | DataStore Preferences |
+| **Compose BOM** | 2024.12.01 |
+
+---
+
+## 📁 Project Structure

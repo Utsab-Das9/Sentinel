@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.privacynudge.data.NudgeEngineTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-03-31T07:17:36.164Z" hostname="LAPTOP-55TL8NMT" time="0.182">
+  <properties/>
+  <testcase name="returns event for HIGH risk with permissions listed" classname="com.privacynudge.data.NudgeEngineTest" time="0.091"/>
+  <testcase name="Contacts plus Social triggers notification" classname="com.privacynudge.data.NudgeEngineTest" time="0.04"/>
+  <testcase name="returns null for uninstalled app" classname="com.privacynudge.data.NudgeEngineTest" time="0.002"/>
+  <testcase name="returns null for LOW risk" classname="com.privacynudge.data.NudgeEngineTest" time="0.001"/>
+  <testcase name="no permissions means no notification" classname="com.privacynudge.data.NudgeEngineTest" time="0.017"/>
+  <testcase name="returns event for MEDIUM risk" classname="com.privacynudge.data.NudgeEngineTest" time="0.004"/>
+  <testcase name="Location plus Analytics triggers notification" classname="com.privacynudge.data.NudgeEngineTest" time="0.002"/>
+  <testcase name="Advertising domain with permissions triggers notification" classname="com.privacynudge.data.NudgeEngineTest" time="0.02"/>
+  <testcase name="multiple permissions plus Analytics triggers notification" classname="com.privacynudge.data.NudgeEngineTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

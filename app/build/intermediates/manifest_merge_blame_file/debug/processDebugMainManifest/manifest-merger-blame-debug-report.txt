@@ -1,0 +1,255 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.privacynudge"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="36" />
+10
+11    <!-- Core permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+13-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:7:5-77
+13-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:8:5-77
+14-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:8:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+15-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:9:5-89
+15-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:9:22-86
+16
+17    <!-- Usage stats permission for tracking app usage -->
+18    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+18-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:12:5-14:47
+18-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:13:9-62
+19
+20    <!-- Query ALL installed packages (Android 11+) -->
+21    <queries>
+21-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:17:5-28:15
+22
+23        <!-- Allow querying any app with a launcher intent -->
+24        <intent>
+24-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:19:9-22:18
+25            <action android:name="android.intent.action.MAIN" />
+25-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:20:13-65
+25-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:20:21-62
+26
+27            <category android:name="android.intent.category.LAUNCHER" />
+27-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:21:13-73
+27-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:21:23-70
+28        </intent>
+29        <!-- Specific target apps for enhanced monitoring -->
+30        <package android:name="com.facebook.katana" />
+30-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:24:9-55
+30-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:24:18-52
+31        <package android:name="com.facebook.orca" />
+31-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:25:9-53
+31-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:25:18-50
+32        <package android:name="com.linkedin.android" />
+32-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:26:9-56
+32-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:26:18-53
+33        <package android:name="com.whatsapp" />
+33-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:27:9-48
+33-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:27:18-45
+34    </queries>
+35
+36    <permission
+36-->[androidx.core:core:1.15.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\0c66a7520771ab6aeb6255d5f39e5e0f\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+37        android:name="com.privacynudge.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+37-->[androidx.core:core:1.15.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\0c66a7520771ab6aeb6255d5f39e5e0f\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+38        android:protectionLevel="signature" />
+38-->[androidx.core:core:1.15.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\0c66a7520771ab6aeb6255d5f39e5e0f\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+39
+40    <uses-permission android:name="com.privacynudge.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+40-->[androidx.core:core:1.15.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\0c66a7520771ab6aeb6255d5f39e5e0f\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+40-->[androidx.core:core:1.15.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\0c66a7520771ab6aeb6255d5f39e5e0f\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+41
+42    <application
+42-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:30:5-85:19
+43        android:allowBackup="true"
+43-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:31:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.15.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\0c66a7520771ab6aeb6255d5f39e5e0f\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:icon="@mipmap/ic_launcher"
+47-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:32:9-43
+48        android:label="@string/app_name"
+48-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:33:9-41
+49        android:roundIcon="@mipmap/ic_launcher_round"
+49-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:34:9-54
+50        android:supportsRtl="true"
+50-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:35:9-35
+51        android:testOnly="true"
+52        android:theme="@style/Theme.PrivacyNudge" >
+52-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:36:9-50
+53        <activity
+53-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:38:9-46:20
+54            android:name="com.privacynudge.MainActivity"
+54-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:39:13-41
+55            android:exported="true"
+55-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:40:13-36
+56            android:theme="@style/Theme.PrivacyNudge" >
+56-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:41:13-54
+57            <intent-filter>
+57-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:42:13-45:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:20:13-65
+58-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:20:21-62
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:21:13-73
+60-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:21:23-70
+61            </intent-filter>
+62        </activity>
+63
+64        <!-- VPN Service -->
+65        <service
+65-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:49:9-64:19
+66            android:name="com.privacynudge.vpn.PrivacyNudgeVpnService"
+66-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:50:13-55
+67            android:exported="false"
+67-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:51:13-37
+68            android:foregroundServiceType="specialUse"
+68-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:52:13-55
+69            android:permission="android.permission.BIND_VPN_SERVICE" >
+69-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:53:13-69
+70            <intent-filter>
+70-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:54:13-56:29
+71                <action android:name="android.net.VpnService" />
+71-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:55:17-65
+71-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:55:25-62
+72            </intent-filter>
+73
+74            <meta-data
+74-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:57:13-59:41
+75                android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON"
+75-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:58:17-73
+76                android:value="false" />
+76-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:59:17-38
+77            <!-- Required property for specialUse foreground service type -->
+78            <property
+78-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:61:13-63:109
+79                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+79-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:62:17-76
+80                android:value="Privacy monitoring VPN for detecting network traffic to sensitive domains" />
+80-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:63:17-106
+81        </service>
+82
+83        <!-- Permission Awareness Service -->
+84        <service
+84-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:67:9-74:19
+85            android:name="com.privacynudge.ui.PermissionAwarenessService"
+85-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:68:13-58
+86            android:exported="false"
+86-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:69:13-37
+87            android:foregroundServiceType="specialUse" >
+87-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:70:13-55
+88            <property
+88-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:61:13-63:109
+89                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+89-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:62:17-76
+90                android:value="Monitors foreground apps to provide real-time permission awareness" />
+90-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:63:17-106
+91        </service>
+92
+93        <!-- Receiver for stop action from notification -->
+94        <receiver
+94-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:77:9-83:20
+95            android:name="com.privacynudge.vpn.StopVpnReceiver"
+95-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:78:13-48
+96            android:exported="false" >
+96-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:79:13-37
+97            <intent-filter>
+97-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:80:13-82:29
+98                <action android:name="com.privacynudge.STOP_VPN" />
+98-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:81:17-68
+98-->C:\Users\lenovo\OneDrive\Sentinel\app\src\main\AndroidManifest.xml:81:25-65
+99            </intent-filter>
+100        </receiver>
+101
+102        <activity
+102-->[androidx.compose.ui:ui-tooling-android:1.7.6] C:\Users\lenovo\.gradle\caches\8.13\transforms\55f0ba61921bb261c61efd9c0aa390a0\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+103            android:name="androidx.compose.ui.tooling.PreviewActivity"
+103-->[androidx.compose.ui:ui-tooling-android:1.7.6] C:\Users\lenovo\.gradle\caches\8.13\transforms\55f0ba61921bb261c61efd9c0aa390a0\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+104            android:exported="true" />
+104-->[androidx.compose.ui:ui-tooling-android:1.7.6] C:\Users\lenovo\.gradle\caches\8.13\transforms\55f0ba61921bb261c61efd9c0aa390a0\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+105        <activity
+105-->[androidx.compose.ui:ui-test-manifest:1.7.6] C:\Users\lenovo\.gradle\caches\8.13\transforms\bde48edbdbff9e0f9d1a1deee63f1561\transformed\ui-test-manifest-1.7.6\AndroidManifest.xml:23:9-25:39
+106            android:name="androidx.activity.ComponentActivity"
+106-->[androidx.compose.ui:ui-test-manifest:1.7.6] C:\Users\lenovo\.gradle\caches\8.13\transforms\bde48edbdbff9e0f9d1a1deee63f1561\transformed\ui-test-manifest-1.7.6\AndroidManifest.xml:24:13-63
+107            android:exported="true" />
+107-->[androidx.compose.ui:ui-test-manifest:1.7.6] C:\Users\lenovo\.gradle\caches\8.13\transforms\bde48edbdbff9e0f9d1a1deee63f1561\transformed\ui-test-manifest-1.7.6\AndroidManifest.xml:25:13-36
+108
+109        <provider
+109-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\bdec07a6f190fad5d45ee8c2ecd31937\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+110            android:name="androidx.startup.InitializationProvider"
+110-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\bdec07a6f190fad5d45ee8c2ecd31937\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+111            android:authorities="com.privacynudge.androidx-startup"
+111-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\bdec07a6f190fad5d45ee8c2ecd31937\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+112            android:exported="false" >
+112-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\bdec07a6f190fad5d45ee8c2ecd31937\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+113            <meta-data
+113-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\bdec07a6f190fad5d45ee8c2ecd31937\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+114-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\bdec07a6f190fad5d45ee8c2ecd31937\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+115                android:value="androidx.startup" />
+115-->[androidx.emoji2:emoji2:1.3.0] C:\Users\lenovo\.gradle\caches\8.13\transforms\bdec07a6f190fad5d45ee8c2ecd31937\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+116            <meta-data
+116-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\lenovo\.gradle\caches\8.13\transforms\728925328fb5f74ff195cb2bb2ca8462\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+117-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\lenovo\.gradle\caches\8.13\transforms\728925328fb5f74ff195cb2bb2ca8462\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:30:17-78
+118                android:value="androidx.startup" />
+118-->[androidx.lifecycle:lifecycle-process:2.8.7] C:\Users\lenovo\.gradle\caches\8.13\transforms\728925328fb5f74ff195cb2bb2ca8462\transformed\lifecycle-process-2.8.7\AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+121                android:value="androidx.startup" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+122        </provider>
+123
+124        <receiver
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+125            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+126            android:directBootAware="false"
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+127            android:enabled="true"
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+128            android:exported="true"
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+129            android:permission="android.permission.DUMP" >
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+130            <intent-filter>
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+131                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+132            </intent-filter>
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+134                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+135            </intent-filter>
+136            <intent-filter>
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+137                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+138            </intent-filter>
+139            <intent-filter>
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+140                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\lenovo\.gradle\caches\8.13\transforms\738dfdeb0c975a4092ef255d57b30760\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+141            </intent-filter>
+142        </receiver>
+143    </application>
+144
+145</manifest>

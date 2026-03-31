@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PrivacyNudge" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">#1A5F7A</item>
+        <item name="android:colorPrimaryDark">#134B5F</item>
+        <item name="android:colorAccent">#57C5B6</item>
+        <item name="android:statusBarColor">#134B5F</item>
+        <item name="android:navigationBarColor">#FAFAFA</item>
+    </style>
+
+</resources>

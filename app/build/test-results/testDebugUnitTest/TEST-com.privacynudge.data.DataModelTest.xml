@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.privacynudge.data.DataModelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-03-31T07:17:36.023Z" hostname="LAPTOP-55TL8NMT" time="0.119">
+  <properties/>
+  <testcase name="test AppPermissionProfile filtering" classname="com.privacynudge.data.DataModelTest" time="0.11"/>
+  <testcase name="test PermissionState initialization" classname="com.privacynudge.data.DataModelTest" time="0.001"/>
+  <testcase name="test AppPermissionProfile dangerousPermissionCount" classname="com.privacynudge.data.DataModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

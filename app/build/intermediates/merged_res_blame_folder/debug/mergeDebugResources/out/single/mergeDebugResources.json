@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\drawable_splash_logo.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\drawable\\splash_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\drawable_splash_background.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\drawable\\splash_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\drawable_splash_logo_image.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\drawable\\splash_logo_image.png"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\drawable_splash_bg_image.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\drawable\\splash_bg_image.png"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\drawable_sentinel_logo.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\drawable\\sentinel_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-debug-52:\\drawable_splash_screen.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\8.13\\com.privacynudge.app-main-54:\\drawable\\splash_screen.xml"
+    },
+    {
+        "merged": "com.privacynudge.app-debug-52:/drawable_developer_portrait.jpg.flat",
+        "source": "com.privacynudge.app-main-54:/drawable/developer_portrait.jpg"
+    }
+]
