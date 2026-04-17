@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="app/src/main/res/drawable/sentinel_logo.png" width="150" alt="Sentinel Logo">
-</p>
 
-# 🛡️ Sentinel
+
+# <p align="center">
+  <img src="app/src/main/res/drawable/sentinel_logo.png" width="150" alt="Sentinel Logo">
+</p> Sentinel
 
 Sentinel is a privacy-focused Android application designed to provide transparency and **granular control** into how other apps on your device use their permissions and communicate with the network.
 
