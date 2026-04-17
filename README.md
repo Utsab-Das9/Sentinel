@@ -1,12 +1,14 @@
 
 
 # <p align="center">
-  <img src="app/src/main/res/drawable/sentinel_logo.png" width="50" alt="Sentinel Logo">
-</p> **Sentinel**
+  <img src="app/src/main/res/drawable/sentinel_logo.png" width="100" alt="Sentinel Logo">
+</p>
+
+## Sentinel
 
 Sentinel is a privacy-focused Android application designed to provide transparency and **granular control** into how other apps on your device use their permissions and communicate with the network.
 
-## 🚀 Key Features
+## 🚀 Key Features 
 
 - **Advanced Application Firewall**: Take full control of your device's connectivity. Block or allow internet access for any application with a single toggle.
 - **VPN-Based Network Monitoring**: Uses a local VPN service to monitor DNS queries and network traffic in real-time.
